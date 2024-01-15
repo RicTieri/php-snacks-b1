@@ -1,5 +1,3 @@
-<h1>Macthes list</h1>
-
 <?php
   $matches = [
     [
@@ -26,17 +24,16 @@
       'punteggio_casa' => '55',
       'punteggio_ospite' => '60',
     ],
-  ];
-
-  foreach($matches as $match){
+  ];  
 ?>
 
+<h1>Macthes list</h1>
+
+<?php foreach($matches as $match){ ?>
 
 <ul>
   <li>
-    <?php
-      echo $match['squadra_casa'] . '-' . $match['squadra_ospite'] . '|' . $match['punteggio_casa'] . '-' . $match['punteggio_ospite'] ;
-    ?>
+    <?php echo $match['squadra_casa'] . '-' . $match['squadra_ospite'] . '|' . $match['punteggio_casa'] . '-' . $match['punteggio_ospite']; ?>
   </li>
 </ul>
 
