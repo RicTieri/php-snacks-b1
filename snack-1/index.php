@@ -1,3 +1,5 @@
+<h1>Macthes list</h1>
+
 <?php
   $matches = [
     [
@@ -28,6 +30,8 @@
 
   foreach($matches as $match){
 ?>
+
+
 <ul>
   <li>
     <?php
@@ -35,6 +39,5 @@
     ?>
   </li>
 </ul>
-<?php
-  }
-?>
+
+<?php  } ?>
