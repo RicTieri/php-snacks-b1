@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- vue -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+  <div id="app">
+      <input type="number" id="input1" name="input1">
+      <input type="number" id="input2" name="input2">
+      <input type="number" id="input3" name="input3">
+      <button type="button" @click="getValue()">send</button>
+    <h1>
+      {{ apiResponse }}
+    </h1>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
