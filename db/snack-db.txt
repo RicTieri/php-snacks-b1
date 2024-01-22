@@ -1,0 +1,19 @@
+SELECT * 
+FROM `students`
+WHERE `surname` LIKE '%o';
+
+-------------------------------
+
+
+
+------------------------------
+
+SELECT *
+FROM `teachers`
+WHERE `name` LIKE '%s%' AND `office_number` > 96;
+
+-----------------------------
+
+SELECT `degree_id`, COUNT(*)
+FROM `courses`
+GROUP BY `degree_id`;
