@@ -21,8 +21,19 @@ class Person {
 
 $john = new Person('john', 33);
 
+echo 'Risultato con valore errato: ';
+
 try {
   echo $john->setAge(44.5);
+} catch (Exception $e){
+  echo '<br>Eccezione con messaggio: ' . $e->getMessage() .'<br><br>';
+}
+
+
+echo 'Risultato con valore giusto: ';
+
+try {
+  echo $john->setAge(44);
 } catch (Exception $e){
   echo '<br>Eccezione con messaggio: ' . $e->getMessage() .'<br><br>';
 }
